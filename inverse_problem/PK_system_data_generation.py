@@ -127,7 +127,7 @@ stan_df = pd.DataFrame({'t': t_eval[1:], 'x_1': preds_x[1:,1], 'x_2': preds_x[1:
                    'z_13': preds_z[1:,13], 'z_14': preds_z[1:,14],'z_15': preds_z[1:,15], 'z_16': preds_z[1:,16],
                    'z_17': preds_z[1:,17], 'z_18': preds_z[1:,18],'z_19': preds_z[1:,19], 'z_20': preds_z[1:,20],
                    })
-stan_df.to_csv('stan_simulations_3states.csv', index=False)
+stan_df.to_csv('train_data/stan_simulations_3states.csv', index=False)
 
 # Estimate the mean and the variance of each output variable
 x_mean = np.mean(preds_x[:,1:], axis=1)
