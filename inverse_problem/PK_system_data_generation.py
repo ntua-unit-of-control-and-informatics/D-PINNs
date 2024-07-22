@@ -189,9 +189,9 @@ y_min = np.min(preds_y[:,1:])
 z_max = np.max(preds_z[:,1:])
 z_min = np.min(preds_z[:,1:])
 
-df.to_csv('PK_simulation.csv', index=False)
+df.to_csv('train_data/PK_simulation.csv', index=False)
 
-with open('parameters.csv', 'w', newline='') as csvfile:
+with open('train_data/parameters.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['t_bar', 't_sd','x_mean_bar', 'x_mean_sd', 'y_mean_bar', 'y_mean_sd', 
                     'z_mean_bar', 'z_mean_sd', 

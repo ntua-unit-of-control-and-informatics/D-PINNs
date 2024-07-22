@@ -434,7 +434,7 @@ t_points = np.reshape(np.linspace(0, 5, 1000), (1000,1))
 # Plot predictions of the NN
 nn_preds = model.predict(t_points)
 preds_df = pd.DataFrame(np.column_stack((t_points,nn_preds)), columns=['time','x_mean', 'x_var', 'y_mean', 'y_var', 'z_mean', 'z_var'])
-preds_df.to_csv('results/predictions_2states.csv', index=False)
+preds_df.to_csv('results/predictions_3states.csv', index=False)
 
 fig = plt.figure(figsize=(5, 5))
 ax = fig.add_subplot()

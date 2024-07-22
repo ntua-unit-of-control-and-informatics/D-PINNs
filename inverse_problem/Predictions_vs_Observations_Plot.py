@@ -4,17 +4,17 @@ import os
 import csv
 import matplotlib.pyplot as plt
 
-os.chdir('/Users/ptsir/Documents/GitHub/Lotka_Voltera/PK_PINN/Multiple_parameters_estimation/3_states')
+os.chdir('inverse_problem')
 
 # Load train data
 def gen_traindata(file_name):
     data = pd.read_csv(file_name)
     return np.vstack(data.iloc[:,0]) , np.vstack(data.iloc[:,1]), np.vstack(data.iloc[:,2]), np.vstack(data.iloc[:,3]), np.vstack(data.iloc[:,4]), np.vstack(data.iloc[:,5]), np.vstack(data.iloc[:,6])
 
-t_obs, x_obs, x_var_obs, y_obs, y_var_obs, z_obs, z_var_obs = gen_traindata('PK_simulation.csv')
+t_obs, x_obs, x_var_obs, y_obs, y_var_obs, z_obs, z_var_obs = gen_traindata('train_data/PK_simulation.csv')
 
 # Load predicted data
-t_points, x_mean, x_var, y_mean, y_var, z_mean, z_var =  gen_traindata('predictions_3states.csv')
+t_points, x_mean, x_var, y_mean, y_var, z_mean, z_var =  gen_traindata('results/predictions_3states.csv')
 
 # Define custom legend elements
 from matplotlib.lines import Line2D
