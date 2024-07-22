@@ -22,8 +22,16 @@ folder contains the code and files related to solving inverse problems using D-P
 
 The `forward_problem` folder, on the other hand, focuses on solving forward problems using D-PINNs. It contains the code and files for simulating the drug mass transfer in the body using the three-compartmental model. This includes functions for predicting the mean and variance of state variables over time.
 
-F
+The [forward_problem](forward_problem) contains the code to reproduce the results for the forward problem.
 
 Both folders provide a practical demonstration of how D-PINNs can be applied to solve inverse and forward problems in the context of pharmacokinetic modeling.
+
+- `PK_system_for_forward.py`: implements the pharmacokinetic model, exactly as `PK_system_data_generation.py`.
+
+- `forward_D-PINN.py`: Implements the training of D-PINN, ut this time the parameters of distribution of the kinetic parameters are fixed to their original values.
+
+- `forward_plots.py`: Creates a plot of the concentration-time profiles (mean and variance) derived from the numerical slution of the ODEs versus the predictions profiles that derive from the trained D-PINN.
+
+In each folder, exist subfolders that contain the final plots and results that are also reported in the paper.
 
 
