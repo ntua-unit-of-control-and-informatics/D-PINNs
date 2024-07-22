@@ -6,7 +6,9 @@ D-PINN is a novel algorithm designed to enable statistical modeling within Physi
 
 This repository provides the code that implements D-PINNS for both forward and inverse problems on an application of a simple 3-compartmental pharmacokinetic model. For more information about the theoretical background and the application of D-PINNs please refer to **D-PINNS: A simple algorithm for facilitating statistical modelling in PINNs**.
 
-The `inverse_problem` folder contains the code and files related to solving inverse problems using D-PINNs. It includes the implementation of the three-compartmental pharmacokinetic model and the necessary functions for estimating the system parameters based on observed data. The contents of `inverse_problem` are:
+
+The [inverse_problem](inverse_problem)
+folder contains the code and files related to solving inverse problems using D-PINNs. It includes the implementation of the three-compartmental pharmacokinetic model and the necessary functions for estimating the system parameters based on observed data. 
 
 - `PK_system_data_generation.py`: This file implements the three-compartmental pharmacokinetic model, which describes the drug mass transfer in the body. It includes functions for simulating the drug concentration over time and generates train_data used for training D-PINN.
 
