@@ -24,8 +24,6 @@ The `forward_problem` folder, on the other hand, focuses on solving forward prob
 
 The [forward_problem](forward_problem) folder contains the code to reproduce the results of the forward problem.
 
-Both folders provide a practical demonstration of how D-PINNs can be applied to solve inverse and forward problems in the context of pharmacokinetic modeling.
-
 - `PK_system_for_forward.py`: implements the pharmacokinetic model, exactly as `PK_system_data_generation.py`.
 
 - `forward_D-PINN.py`: Implements the training of D-PINN, ut this time the parameters of distribution of the kinetic parameters are fixed to their original values.
