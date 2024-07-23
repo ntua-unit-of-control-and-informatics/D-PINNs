@@ -28,6 +28,6 @@ The [forward_problem](forward_problem) folder, on the other hand, focuses on sol
 
 - `forward_plots.py`: Creates a plot of the concentration-time profiles (mean and variance) derived from the numerical slution of the ODEs versus the predictions profiles that derive from the trained D-PINN.
 
-In each folder, exist subfolders that contain the final plots and results that are also reported in the paper.
+Each folder consists of subfolders that contain the final plots and results that are also reported in the paper.
 
 
